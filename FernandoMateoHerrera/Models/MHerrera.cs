@@ -18,6 +18,6 @@ namespace FernandoMateoHerrera.Models
 
         [ForeignKey("CareraId")]
         public int? CarreraId { get; set; }
-        public Carrera? Carrera { get; set; }
+        public Carrera? Carrera { get; set; } //Terminado
     }
 }
