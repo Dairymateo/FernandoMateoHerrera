@@ -20,3 +20,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+h1 {
+    color: orange;
+}
+
+.clase1 {
+    font-size: 100pt;
+}
+}
