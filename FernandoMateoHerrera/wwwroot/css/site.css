@@ -27,4 +27,9 @@ h1 {
 .clase1 {
     font-size: 100pt;
 }
+
+img {
+    height: 600px;
+    width: 200px;
+    padding: 50px;
 }
