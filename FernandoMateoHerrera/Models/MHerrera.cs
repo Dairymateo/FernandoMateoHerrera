@@ -14,6 +14,7 @@ namespace FernandoMateoHerrera.Models
         public Boolean Ecuatoriano { get; set; }
         [AllowNull]
         public double TimpoPromedio { get; set; }
+        
         public DateTime FechaNacimiento { get; set; }
 
         [ForeignKey("CareraId")]

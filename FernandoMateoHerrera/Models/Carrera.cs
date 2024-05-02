@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace FernandoMateoHerrera.Models
 {
@@ -7,7 +8,9 @@ namespace FernandoMateoHerrera.Models
     {
         [Key]
         public int CarreraId { get; set; }
+        [AllowedValues(typeof(int))]
         public String NombreCarrera { get; set; }
+        [DisplayName("Campus")]
         public String Campus {  get; set; }
         public int Semestre { get; set; }
 
