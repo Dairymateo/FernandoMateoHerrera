@@ -1,0 +1,48 @@
+﻿@model FernandoMateoHerrera.Models.MHerrera
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MHerrera</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ecuatoriano)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ecuatoriano)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TimpoPromedio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TimpoPromedio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Carrera)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Carrera.CarreraId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
