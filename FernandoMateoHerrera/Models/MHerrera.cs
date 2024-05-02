@@ -18,7 +18,7 @@ namespace FernandoMateoHerrera.Models
         public DateTime FechaNacimiento { get; set; }
 
         [ForeignKey("CareraId")]
-        public int? CarreraId { get; set; }
+        public int? CarreraId { get; set; }//
         public Carrera? Carrera { get; set; } //Terminado
     }
 }
